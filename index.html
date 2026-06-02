@@ -523,7 +523,7 @@ function App() {
         <div className="flex items-center justify-between mb-3">
           <h3 className="font-semibold text-sm flex items-center gap-2">
             Reviews <span className="text-slate-400 font-normal">({filtered.length.toLocaleString()})</span>
-            <Info text="Every individual review matching the current filters. Sentiment column is the 0–10 VADER score; the coloured badge is the rating-based RAG bucket. Use the search box and filters above to narrow this list. 'Export filtered CSV' downloads exactly these rows." />
+            <Info text="Every individual review matching the current filters. Sentiment column is the 0–10 VADER score; the coloured badge is the rating-based RAG bucket. Use the search box and filters above to narrow this list. The Export menu (top-right) downloads exactly these rows as CSV, Excel, or PDF." />
           </h3>
           <div className="flex items-center gap-2 text-sm">
             <button disabled={page === 0} onClick={() => setPage(page - 1)}
